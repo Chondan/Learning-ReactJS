@@ -1,0 +1,11 @@
+$borderColor: red;
+@mixin setBorder($color) {
+    border: 1px solid $color;
+}
+.box-space {
+    padding: 10px;
+}
+div.box {
+    @include setBorder($borderColor);
+    @extend .box-space;
+}
